@@ -1,0 +1,12 @@
+{
+  "name": "mesquita-barber-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "moment": "^2.29.1",
+    "node-schedule": "^2.1.0",
+    "telegraf": "3.17.3"
+  }
+}
