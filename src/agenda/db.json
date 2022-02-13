@@ -1,15 +1,18 @@
 {
-  "tarefas": [{
-    "id": 1,
-    "descricao": "Gravar as aulas do curso de bot",
-    "dt_previsao": "2022-01-14",
-    "dt_conclusao": null,
-    "observcao": "Lembrar de verificar as baterias dos equipamentos"
-  }, {
-    "id": 2,
-    "descricao": "Editar as aulas do curso de bot",
-    "dt_previsao": "2022-01-15",
-    "dt_conclusao": null,
-    "observcao": "Não esquecer de editar as cores"
-  }]
+    "imoveis": [
+        {
+          "id": 1,
+          "descricao": "Casa no lago, bairro Olimpio Campos",
+          "img_url": "https://i.imgur.com/Tg7bKB3.jpeg",
+          "diaria":  200,
+          "endereco": "Rua A, numero 832, Nossa Senhora da Glória - Sergipe"
+        },
+        {
+          "id": 2,
+          "descricao": "Casa de Luxo, bairro Monte Olimpo",
+          "img_url": "https://i.imgur.com/Pq5gmq2.jpeg",
+          "diaria": 800,
+          "endereco": "Rua B, numero 122, Nossa Senhora da Glória - Sergipe"
+        }
+  ]
 }
