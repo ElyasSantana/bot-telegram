@@ -9,8 +9,8 @@ const getAgenda = async (date) => {
   const pendente = (item) =>
     item.dt_conclusao === null && moment(item.dt_previsao).isSameOrBefore(date);
 
-  console.log(response.data);
-  return response.data.filter(pendente);
+  // console.log(response.data);
+  return response.data;
 };
 
 const getTarefa = async (id) => {
