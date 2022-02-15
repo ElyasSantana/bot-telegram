@@ -2,16 +2,26 @@
   "imoveis": [{
       "id": 1,
       "descricao": "Casa no lago, bairro Olimpio Campos",
-      "img_url": "https://i.imgur.com/Tg7bKB3.jpeg",
+      "img_url": "https://imgur.com/gallery/gTxJr4i",
       "diaria": 200,
-      "endereco": "Rua A, numero 832, Nossa Senhora da Glória - Sergipe"
+      "endereco": {
+        "rua": "Rua A",
+        "numero": "832",
+        "cidade": "Nossa Senhora da Glória",
+        "estado": "Sergipe"
+      }
     },
     {
       "id": 2,
       "descricao": "Casa de Luxo, bairro Monte Olimpo",
       "img_url": "https://i.imgur.com/Pq5gmq2.jpeg",
       "diaria": 800,
-      "endereco": "Rua B, numero 122, Nossa Senhora da Glória - Sergipe"
+      "endereco": {
+        "rua": "Rua B",
+        "numero": "122",
+        "cidade": "Nossa Senhora da Glória",
+        "estado": "Sergipe"
+      }
     }
   ],
   "tarefas": [{
