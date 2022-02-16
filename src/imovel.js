@@ -12,6 +12,7 @@ class Imovel {
   async getImovel(id) {
     const url = `${this.baseUrl}/${id}`;
     const response = await axios.get(url);
+    console.log(response.data);
     return response.data;
   }
 

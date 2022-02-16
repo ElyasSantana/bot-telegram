@@ -31,6 +31,15 @@ class Aluguel {
     });
     return response.data;
   }
+
+  async getAllAlugueisById(idLocatario) {
+    const resposta = await axios.post(`${this.baseUrl}`, {
+      idLocatario,
+      alugado: true,
+    });
+
+    return resposta.data;
+  }
 }
 
 module.exports = { Aluguel };

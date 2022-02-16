@@ -6,15 +6,24 @@ class Locatario {
 
   async getLocatarios(id) {
     const url = `${this.baseUrl}/${id}`;
-    const response = await axios.get(url);
-
-    return response.data;
+    try {
+      const response = await axios.get(url);
+      if (response.status === 200) {
+        return response.data;
+      } else {
+        return [];
+      }
+    } catch (error) {
+      console.error(error.status);
+    }
   }
 
   async cadastrarLocatario(idTelegram, nome) {
-    const usuario = getLocatarios(idTelegram);
-    if (!usuario.idTelegram) {
-      const response = await axios.post(url, {
+    const usuario = await this.getLocatarios(idTelegram);
+    console.log(usuario);
+    if (usuario !== []) {
+      const response = await axios.post(`${this.baseUrl}`, {
+        id: idTelegram,
         idTelegram: idTelegram,
         nome: nome,
         telefone: '',

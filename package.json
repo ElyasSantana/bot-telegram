@@ -11,10 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.17.0",
     "axios": "^0.25.0",
+    "json-server": "^0.17.0",
     "moment": "^2.29.1",
     "node-schedule": "^2.1.0",
-    "telegraf": "^4.7.0"
+    "telegraf": "3.17.3"
   }
 }
