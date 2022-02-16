@@ -9,19 +9,22 @@ const moment = require('moment');
 const session = require('telegraf/session');
 
 const { Imovel } = require('./imovel');
-const { Bairro } = require('./bairro');
+const { Locatario } = require('./locatario');
 
 const bot = new Telegraf(env.token);
 
 bot.use(session());
 
 bot.start(async (context) => {
-  const name = context.update.message.from.first_name;
+  const userId = context.update.message.from.id;
+  const nome = context.update.message.from.first_name;
+  console.log(userId);
   context.session.imovel = new Imovel();
-  context.session.bairro = new Bairro();
+  context.session.locatario = new Locatario();
+  await context.session.locatario.cadastrarLocatario(userId, nome);
 
   await context.reply(`
-  Seja bem-vindo, ${name}!
+  Seja bem-vindo, ${nome}!
   Eu sou o Luidi 🤖.
   `);
   bot.telegram.sendMessage(

@@ -1,9 +1,18 @@
 {
+  "locatarios": [{
+    "id": 1,
+    "idTelegram": 483482585,
+    "nome": "Elyaakim Aguiar Santana",
+    "telefone": "(79)99848-0538",
+    "pontosFidelidade": 0,
+    "dataCadastro": "2022-02-16"
+  }],
   "imoveis": [{
       "id": 1,
       "descricao": "Casa no lago, bairro Olimpio Campos",
       "img_url": "https://imgur.com/gallery/gTxJr4i",
-      "diaria": 200,
+      "diaria": 150,
+      "pontosFidelidade": 15,
       "endereco": {
         "rua": "Rua A",
         "numero": "832",
@@ -15,7 +24,8 @@
       "id": 2,
       "descricao": "Casa de Luxo, bairro Monte Olimpo",
       "img_url": "https://i.imgur.com/Pq5gmq2.jpeg",
-      "diaria": 800,
+      "diaria": 250,
+      "pontosFidelidade": 25,
       "endereco": {
         "rua": "Rua B",
         "numero": "122",
@@ -24,17 +34,25 @@
       }
     }
   ],
-  "tarefas": [{
-    "id": 1,
-    "descricao": "Gravar as aulas do curso de bot",
-    "dt_previsao": "2022-01-14",
-    "dt_conclusao": null,
-    "observcao": "Lembrar de verificar as baterias dos equipamentos"
-  }, {
-    "id": 2,
-    "descricao": "Editar as aulas do curso de bot",
-    "dt_previsao": "2022-01-15",
-    "dt_conclusao": null,
-    "observcao": "Não esquecer de editar as cores"
-  }]
+  "alugueis": [{
+      "id": 1,
+      "data_entrada": "2022-01-10",
+      "data_saida": "2022-01-14",
+      "disponivel": true,
+      "alugado": false,
+      "valorAluguel": 600,
+      "imoveis_idImovel": 1,
+      "idLocatario": 483492585
+    },
+    {
+      "id": 2,
+      "data_entrada": "2022-02-10",
+      "data_saida": "2022-02-17",
+      "disponivel": true,
+      "alugado": false,
+      "valorAluguel": 1750,
+      "imoveis_idImovel": 2,
+      "idLocatario": 483492585
+    }
+  ]
 }
